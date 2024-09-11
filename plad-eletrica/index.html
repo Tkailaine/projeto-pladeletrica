@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plad Elétrica</title>
+    <link rel="stylesheet" href="./estilos/style.css" media="all">
+    <link rel="stylesheet" href="./estilos/telasmuitopequenas.css" media="screen and (max-width:400px)">
+    <link rel="stylesheet" href="./estilos/tablet.css" media="screen and (min-width:600px) and (max-width:874px)">
+    <link rel="stylesheet" href="./estilos/desktop.css" media="screen and (min-width:874px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./estilos/tv.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+
+    <header id="inicio">
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="imagens/Logo1.png" alt="Logo Plad Elétrica"></a>
+            </div>
+    
+            <div class="imenu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </div>
+    
+            <div class="itens desktop">
+                <div><a href="#inicio" target="_self">Home</a></div>
+                <div><a href="#sessao1" target="_self">Sobre</a></div>
+                <div><a href="#acomodacoes" target="_self">Serviços</a></div>
+                <div><a href="#galeria-ft" target="_self">Galeria</a></div>
+            </div>
+    
+            <div class="menu-lateral">
+                <div class="close-btn"> &times;</div>
+                <ul class=" lateral">
+                    <li><a href="#inicio" target="_self">Home</a> 
+                    <li><a href="#sessao1" target="_self">Sobre</a>
+                    <li><a href="#acomodacoes" target="_self">Nossas <br>acomodação</a>
+                    <li><a href="#spa" target="_self">Spa Aura</a>
+                    <li><a href="#atracoes" target="_self">Atrações</a>
+                    <li><a href="#galeria-ft" target="_self">Galeria</a>
+                </ul>
+            </div>
+    
+           
+            <div>
+                <a href="#"><input type="button" value="Nos contate" class="btn-contato"></a>
+            </div>   
+        </nav>
+    </header>
+
+    <main>
+        <section class="bandeira">
+
+        </section>
+
+        <section class="quem-somos">
+            <div class="conteudo">
+                <div class="titulo-personalizado">
+                 <h1>Quem somos</h1>
+                </div>
+
+                <p class="resumo-sobre">A <strong>Plad Elétrica</strong> é uma empresa autônoma especializada em soluções elétricas para ambientes residenciais, prediais e industriais. Com mais de 15 anos de experiência no mercado, oferecemos um serviço diferenciado, com foco na <strong>qualidade</strong> dos materiais utilizados, no <strong>atendimento excelente</strong> e na <strong>segurança</strong> total de nossos clientes e colaboradores. Nossa missão é garantir a eficiência e a segurança das instalações elétricas em cada projeto, seja pequeno ou grande.</p>
+            </div>
+
+            <div class="conteudo servicos">
+                <div class="titulo-personalizado">
+                    <div class="flash"></div>
+                    <h1>Nossos serviços</h1>
+                    <div class="flash"></div>
+                </div>
+            </div>
+
+
+            <div class="slideshow-wrapper">
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <div class="slideshow-container">
+                    <div class="card foto1" id="card-1">
+                        <h2>Instalações Elétricas Residenciais</h2>
+                        <p>Oferecemos soluções completas para sua residência, desde pequenos reparos até projetos completos de elétrica, garantindo sempre a segurança e eficiência energética.</p>
+                    </div>
+                    <div class="card foto2" id="card-2">
+                        <h2>Instalações Elétricas Prediais</h2>
+                        <p>Atuamos em projetos de instalações elétricas para prédios e condomínios, proporcionando segurança, funcionalidade e adequação às normas vigentes.</p>
+                    </div>
+                    <div class="card foto3" id="card-3">
+                        <h2>Instalações Elétricas Industriais</h2>
+                        <p>Realizamos projetos e instalações elétricas em indústrias, garantindo operação contínua, segurança e conformidade com regulamentações técnicas.</p>
+                    </div>
+                    <div class="card foto4" id="card-4">
+                        <h2>Instalações Hidráulicas</h2>
+                        <p>Instalação e manutenção de bombas <strong style="color: white;">periféricas</strong> e <strong style="color: white;">submersas</strong>.</p>
+                    </div>
+                    <div class="card foto5" id="card-5">
+                        <h2>Instalação de Cerca Elétrica</h2>
+                        <p>Oferecemos soluções completas para a instalação e manutenção de cercas elétricas, desde pequenos perímetros até projetos mais complexos, garantindo sempre a máxima segurança com equipamentos de alta qualidade e total eficiência na proteção de sua propriedade.
+                        </p>
+                    </div>
+                    <div class="card foto6" id="card-6">
+                        <h2>Instalação e Manutenção de Câmeras</h2>
+                        <p>Oferecemos soluções completas para a instalação e manutenção de câmeras de segurança, desde a configuração de sistemas simples até projetos avançados de monitoramento, garantindo sempre a proteção do seu patrimônio com tecnologia de ponta e total confiabilidade.</p>
+                    </div>
+                    <div class="card foto7" id="card-7">
+                        <h2>Pintura em Geral</h2>
+                        <p>Oferecemos soluções completas para pintura em geral, desde pequenos retoques até projetos de grande escala, garantindo sempre um acabamento impecável com materiais de alta qualidade, transformando seu espaço com durabilidade e estilo.</p>
+                    </div>
+                </div>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div></section>
+
+            <section class="qualidade">
+
+                <div class="txt-qualidade">
+                    <h1>Qualidade é nosso compromisso</h1>
+                    <p>Na Plad Elétrica , só adquirimos os melhores materiais e fornecedores reconhecidos no mercado. Garantimos que cada instalação realizada por nós segue os mais altos padrões de qualidade, durabilidade e eficiência. Somos qualificados e sempre atualizados com as normas mais recentes, garantindo que cada serviço seja entregue com excelência.</p>
+                </div>
+
+            </section>
+
+            <section class="seguranca">
+                <div>
+                    <h1 style="text-align: center;">Segurança em primeiro lugar</h1>
+                    <p>A segurança está no centro de tudo o que fazemos. Todos os nossos projetos seguem rigorosamente as normas de segurança, como a NR10, garantindo que os sistemas elétricos sejam instalados e operados de forma segura. Desde a escolha dos materiais até a execução final, nosso compromisso é com a integridade de nossos clientes, colaboradores e das instalações realizadas.</p>
+                </div>
+                <div>
+                    <div class="destaques">
+                        <div class="icones">
+                            <div class="icone norma"></div>
+                            <h1>Adequação às normas NR10 e NBR5410;</h1>
+                        </div>
+                    
+                        <div class="icones">
+                            <div class="icone instalacoes"></div>
+                            <h1>Instalações revisadas;</h1>
+                        </div>
+                    
+                        <div class="icones">
+                            <div class="icone protecao"></div>
+                            <h1>Uso de EPI's e EPC's em todas as operações.</h1>
+                        </div>
+                </div>
+            </section>
+            
+
+
+
+
+
+
+        
+
+        
+
+        <script src="script.js"></script>
+    </main>
+    
+    
+</body>
+</html>

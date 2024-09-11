@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.bandeira{
+  background-position: center;
+}
+
+
+.border{
+  
+    border-top: 1px solid rgba(0, 0, 0, 0.26);
+}

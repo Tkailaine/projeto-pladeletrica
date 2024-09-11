@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+html, body{
+  scroll-behavior: smooth;
+}
+.desktop{
+  display: flex;
+  list-style-type: none;
+}
+
+.imenu{
+  display: none;
+}
+.menu-lateral{
+  display:none;
+}
+
+header > nav > .itens  a{
+  font-size: 1.2em;
+  font-weight: 600;
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none; 
+}
+
+header > nav > .itens a:hover{
+  background-color:var(--cor3); 
+  color: white;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.589);
+  padding: 3px 5px;
+}
+
+header > nav > .itens{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  gap: 60px;
+  padding: 50px 0px;
+}
+
+.conteudo p{
+ font-size: 1.3em;
+}
+
+.bandeira{
+  background-position: center;
+}
+
+.border{
+  border-left: 1px solid rgba(0, 0, 0, 0.26);
+
+}
+
+.qualidade  p{
+ font-size: 1.2em;
+}
+
+.seguranca p{
+  font-size: 1.2em;
+}
+
+.icones{
+  display: flex;
+  gap: 30px;
+ 
+}
+.norma{
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.instalacoes{
+  width: 50px;
+  height: 50px;
+ 
+}
+
+.protecao{
+  width: 50px;
+  height: 50px;
+ 
+}

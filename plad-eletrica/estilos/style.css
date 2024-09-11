@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1.900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root{
+    --fonte-padrao: Roboto, Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-destaque: Archivo, sans-serif;
+
+    --cor1: #003f7a;
+    --cor2: #29abe2;
+    --cor3: #f7931e;
+    --cor4: #f2f2f2;
+    --cor5: #A0A0A0;
+    --cor6: #F4F4F4;
+}
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    overflow-x: hidden;
+    font-family: var(--fonte-padrao);
+    background-color: rgb(255, 255, 255);
+}
+
+
+header{
+    background-image: linear-gradient(45deg,#003f7a 20%, #29abe2);
+    font-family: var(--fonte-destaque);
+    position: relative;
+    z-index: 1000;
+    width: 100vw;
+}
+
+
+header> nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 0px 0px; 
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+
+}
+
+header .logo> a >img{
+  width: 150px;
+}
+
+
+.desktop{display: none;}
+
+.imenu {
+    z-index: 999;
+    cursor: pointer;
+  }
+
+.imenu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color:  #ffffff;
+  margin-bottom: 5px; 
+  }
+
+.lateral a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+}
+
+.lateral{
+    list-style-type: none;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(45deg,white 20%, rgb(238, 233, 233));
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+  
+  .menu-lateral.open {
+    left: 0;
+    z-index: 999; 
+  }
+  
+  .menu-lateral ul {
+    position: absolute;
+    top: 50%;
+    list-style: none;
+    padding: 0;
+    transform: translate(0%,-50%);
+    margin-left: 20px;
+  }
+  
+  .menu-lateral ul li {
+    padding: 15px;
+    font-family: var(--font-principal);
+    font-size: 1.5em;
+    text-align: left; 
+  }
+  
+  .menu-lateral ul li a:hover {
+    color: var(--cor2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+  }
+
+
+
+.btn-contato{
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    color: var(--cor1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.btn-contato:hover{
+    color: white;
+    background-color:var(--cor3);
+    transition-duration: 0.5s;
+    border: 1px solid var(--cor3);
+    
+}
+
+.bandeira{
+    background-image: url(../imagens/desktop.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+   
+    
+}
+
+.quem-somos{
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0px;
+
+
+}
+
+.conteudo h1, p{
+  width: 80%;
+  margin: auto;
+}
+
+.conteudo h1{
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  color: var(--cor2);
+}
+
+.conteudo .resumo-sobre{
+  text-align: justify;
+}
+
+strong{
+  color: var(--cor2);
+}
+
+
+
+.titulo-personalizado{
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
+  margin-top: 70px;
+ 
+}
+
+.titulo-personalizado h1{
+  display: block;
+  width: auto;
+  margin: 0px 10px;
+ 
+}
+
+.flash{
+  background-image: url(../imagens/flash.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+ 
+}
+
+
+/* Wrapper para manter os botões em posição correta */
+.slideshow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Container do slideshow em flexbox */
+.slideshow-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+/* Estilo dos cards */
+.card {
+  flex: 0 0 auto; /* Cards lado a lado */
+  width: calc(100% / 3); /* Três cards no desktop, ajusta conforme o tamanho da tela */
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card h2{
+  font-size: 1.1em;
+  margin: 70px 0px 50px 0px;
+}
+
+.foto1{
+  background-image: url(../imagens/residencial.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto2{
+  background-image: url(../imagens/predial.jpg);
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto3{
+  background-image: url(../imagens/industrial.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto4{
+  background-image: url(../imagens/hidraulica.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto5{
+  background-image: url(../imagens/cerca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto6{
+  background-image: url(../imagens/camera.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto7{
+  background-image: url(../imagens/pintura.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Estilo responsivo */
+@media (max-width: 1024px) {
+  .card {
+      width: calc(100% / 2); /* Dois cards em telas menores */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%; /* Um card por vez no mobile */
+  }
+}
+
+/* Botões de navegação */
+button.prev, button.next {
+  background-color: var(--cor3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.qualidade{
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-image: url(../imagens/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.txt-qualidade{
+  position: absolute;
+  top: 50%;
+  transform: translate(5%, -50%);
+  width: 90%;
+}
+
+.qualidade h1, p{
+  text-align: center;
+}
+
+.seguranca{
+  padding-top: 50px;
+}
+
+.seguranca h1{
+  color: #f7931e;
+  width: 80%;
+  margin: auto;
+  
+}
+
+.seguranca p{
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.destaques{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  margin: 50px auto;
+
+}
+
+.destaques h1{
+  font-size: 1.2em;
+  margin: 0px;
+
+}
+
+.icones{
+  display: flex;
+  gap: 10px;
+  align-items: center ;
+ 
+}
+
+.norma{
+  background-image: url(../imagens/iso.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+ 
+}
+
+.instalacoes{
+  background-image: url(../imagens/seguranca.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+ 
+}
+
+.protecao{
+  background-image: url(../imagens/epis.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+ 
+}

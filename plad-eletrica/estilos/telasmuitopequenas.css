@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.imenu span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    }
+
+.bandeira{
+    height: 500px;   
+}
+
+
+.quem-somos{
+    padding: 20px 0px;
+    font-size: 0.85em;
+  
+  }
+
+  
+.conteudo h1{
+    font-size: 1.85em;
+  }
+
+  .titulo-personalizado{
+    margin-top: 50px;
+   
+  }
+
+  button.prev {
+    left: 0px;
+  }
+  
+  button.next {
+    right: -10px;
+  }
+
+  .qualidade p{
+    font-size: 0.85em;
+  }
+
+  .qualidade h1{
+    font-size: 1.4em;
+  }
+
+  
+.seguranca h1{
+    font-size: 1.3em;
+  }
+
+
+.destaques h1{
+font-size: 1em;
+
+}

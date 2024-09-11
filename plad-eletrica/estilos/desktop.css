@@ -1,0 +1,49 @@
+html, body{
+    scroll-behavior: smooth;
+  }
+  .desktop{
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .imenu{
+    display: none;
+  }
+  .menu-lateral{
+    display:none;
+  }
+  
+  header > nav > .itens  a{
+    display: block;
+    font-size: 1.07em;
+    font-weight: 600;
+    color: #f2f2f2;
+    text-decoration: none; 
+  
+  }
+  
+  header > nav > .itens a:hover{
+    background-color:var(--cor1); 
+    color: white;
+    transition-duration: 0.3s;
+    border-radius: 10px;
+    padding: 3px 5px;
+  }
+  
+  header > nav > .itens{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 20px;
+  
+  }
+
+  .bandeira{
+    background-position: center;
+  }
+  
+
+  .border{
+    border-left: 1px solid rgba(0, 0, 0, 0.26);
+  
+  }
