@@ -157,6 +157,11 @@ header .logo> a >img{
   color: white;
 }
 
+.txt-bandeira h1{
+  font-size: 1.3em;
+  top: 20%;
+}
+
 .txt-bandeira{
   position: absolute;
   top: 10%;
@@ -168,7 +173,7 @@ header .logo> a >img{
 
 .typing-text { 
   color: white;
-  font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+  font-size: 0.7em; /* Ajuste o tamanho da fonte conforme necessário */
   width: 80%; /* Ocupa 50% da largura do banner */
   overflow-wrap: break-word; /* Para permitir quebra de palavra */
   text-align: left;
@@ -185,7 +190,7 @@ header .logo> a >img{
   color: white;
   font-weight: 600;
   padding: 10px;
-  top: 85%;
+  top: 75%;
   left: 5%;
   cursor: pointer;
 }
