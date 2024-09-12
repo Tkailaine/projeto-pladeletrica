@@ -147,12 +147,12 @@ header .logo> a >img{
 }
 
 .bandeira{
-    background-image: url(../imagens/teste.jpg);
-    background-position: 70%;
+    background-image: url(../imagens/banner.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
+    height: 600px;
    
     
 }
@@ -223,8 +223,9 @@ strong{
   align-items: center;
   justify-content: space-between;
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
+  margin: auto;
 }
 
 /* Container do slideshow em flexbox */
@@ -239,10 +240,12 @@ strong{
 /* Estilo dos cards */
 .card {
   flex: 0 0 auto;
-  width: 100%; /* Mostra um card por vez no mobile */
-  margin: 10px;
+  width: 100%; /* Cada card ocupará 100% da largura no mobile */
+  margin: 0; /* Remove margens laterais no mobile */
   padding: 20px;
+  height: 400px;
   background-color: #f4f4f4;
+  color: white;
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
@@ -250,8 +253,13 @@ strong{
 
 /* Responsivo */
 @media (min-width: 768px) {
+  .slideshow-container {
+      padding: 0 10px; /* Padding para compensar margens no desktop */
+  }
+
   .card {
-      width: calc(100% / 3); /* Três cards por vez no desktop */
+      margin: 0 15px; /* Reaplica margens laterais no desktop */
+      width: calc((100% / 3) - 30px); /* Ajusta a largura no desktop */
   }
 }
 
@@ -276,6 +284,18 @@ button.prev {
 button.next {
   right: 10px;
 }
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 30px;
+}
+
+.card p {
+  text-align: justify;
+  width: 90%;
+}
+
+
 
 
 

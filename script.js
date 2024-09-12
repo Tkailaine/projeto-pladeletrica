@@ -28,7 +28,12 @@ function plusSlides(n) {
     isAnimating = true;
 
     const containerWidth = container.offsetWidth;
-    const cardWidth = container.querySelector('.card').offsetWidth + 20; // Inclui a margem
+    let cardWidth = container.querySelector('.card').offsetWidth;
+
+    // Somar margens apenas no desktop
+    if (window.innerWidth >= 768) {
+        cardWidth += 30; // 15px de cada lado no desktop
+    }
 
     // Ajusta a posição de scroll
     currentScrollPosition += n * cardWidth;
