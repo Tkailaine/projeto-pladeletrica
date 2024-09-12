@@ -47,3 +47,20 @@ html, body{
     border-left: 1px solid rgba(0, 0, 0, 0.26);
   
   }
+
+  .card{
+    height: 480px;
+  }
+
+  .destaques{
+    gap: 30px;
+    width: 50%;
+    margin: 50px 0px;
+  }
+
+  .layout-flex{
+    justify-content:left;
+    width: 100%;
+    margin-left: 10%;
+    
+  }

@@ -235,6 +235,7 @@ strong{
   scroll-behavior: smooth;
   width: 100%;
   transition: transform 0.5s ease; /* Transição suave */
+  margin-top: 30px;
 }
 
 /* Estilo dos cards */
@@ -287,19 +288,14 @@ button.next {
 
 .card h2 {
   font-size: 1.2em;
-  margin: 30px;
+  margin: 50px;
 }
 
 .card p {
+  font-size: 0.85em;
   text-align: justify;
   width: 90%;
 }
-
-
-
-
-
-
 
 .qualidade{
   position: relative;
@@ -325,6 +321,7 @@ button.next {
 
 .seguranca{
   padding-top: 50px;
+  padding-bottom: 150px;
 }
 
 .seguranca h1{
@@ -337,15 +334,15 @@ button.next {
 .seguranca p{
   text-align: justify;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .destaques{
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
-
 }
 
 .destaques h1{
@@ -389,7 +386,49 @@ button.next {
   width: 30px;
   height: 30px;
  
+}.img-destaques{
+  position: relative;
+  width: 400px;
+  height: 450px;
 }
+
+.ft-destaques{
+  width: 200px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #ff880083;
+}
+
+.epi{
+  position: absolute;
+  top: 35%;
+  background-image: url(../imagens/protecao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+
+}
+
+.manutencao{
+  position: absolute;
+  left: 30%;
+  background-image: url(../imagens/manutencao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.layout-flex{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
 .foto1{
   background-image: url(../imagens/residencial.jpg);
   background-position: center;
@@ -438,3 +477,4 @@ button.next {
   background-repeat: no-repeat;
   background-size: cover;
 }
+

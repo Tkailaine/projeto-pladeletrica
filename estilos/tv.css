@@ -83,3 +83,56 @@ header > nav > .itens{
   height: 50px;
  
 }
+
+.ft-destaques{
+  width: 350px;
+  height: 400px;
+}
+
+.manutencao{  
+  left: 60%;
+
+}
+
+.destaques{
+  gap: 30px;
+  width: 50%;
+  margin: 50px 0px;
+}
+
+.layout-flex{
+  justify-content:left;
+  width: 100%;
+  margin-left: 10%;
+  
+}
+
+@media (max-width: 1580px) {
+  .ft-destaques{
+    width: 200px;
+    height: 300px;
+   
+  }
+
+  .epi{
+    top: 35%;
+  }
+  
+  .manutencao{
+    left: 30%;
+
+  }
+
+  .destaques{
+    gap: 30px;
+    width: 50%;
+    margin: 50px 0px;
+  }
+
+  .layout-flex{
+    justify-content:left;
+    width: 100%;
+    margin-left: 10%;
+    
+  }
+}
