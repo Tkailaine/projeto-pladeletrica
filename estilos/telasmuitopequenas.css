@@ -10,6 +10,21 @@
     height: 500px;   
 }
 
+.txt-bandeira h1{
+  font-size: 1.2em;
+  top: 20%;
+}
+
+
+
+.typing-text { 
+  font-size: 0.75em; 
+}
+
+.btn-orcamento{
+  top: 80%;
+}
+
 
 .quem-somos{
     padding: 20px 0px;
@@ -35,6 +50,9 @@
     right: -10px;
   }
 
+  .qualidade{
+    margin-top: 50px;
+  }
   .qualidade p{
     font-size: 0.85em;
   }

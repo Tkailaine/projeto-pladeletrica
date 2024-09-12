@@ -131,7 +131,7 @@ header .logo> a >img{
     height: 40px;
     width: 100px;
     font-weight: 600;
-    color: var(--cor1);
+    color: var(--cor2);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -146,25 +146,58 @@ header .logo> a >img{
     
 }
 
-.bandeira{
-    background-image: url(../imagens/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 600px;
-   
-    
-}
-
-.quem-somos{
-  background-color: white;
+.bandeira {
+  position: relative;
+  background-image: url(../imagens/banner-principal.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 50px 0px;
+  width: 100%;
+  height: 600px;
+  color: white;
+}
+
+.txt-bandeira{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 40%;
+  text-align: left;
+}
 
 
+.typing-text { 
+  color: white;
+  font-size: 0.8em; /* Ajuste o tamanho da fonte conforme necessário */
+  width: 80%; /* Ocupa 50% da largura do banner */
+  overflow-wrap: break-word; /* Para permitir quebra de palavra */
+  text-align: left;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.btn-orcamento{
+  position: absolute;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #29abe2;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  top: 85%;
+  left: 5%;
+  cursor: pointer;
+}
+
+.btn-orcamento:hover{
+  box-shadow: 2px 2px 4px 2px rgba(255, 255, 255, 0.685);
+}
+
+
+.quem-somos{
+  background-color: white;
+  padding: 0px 0px 70px 0px;
 }
 
 .conteudo h1, p{
@@ -176,7 +209,7 @@ header .logo> a >img{
   font-size: 2em;
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 50px;
+  margin-top: 0px;
   color: var(--cor2);
 }
 
@@ -477,4 +510,54 @@ button.next {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Defina o estado inicial dos elementos */
+.surge-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Estado final ao entrar na visualização */
+.surge-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.surge-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.surge-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.surge-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 1.2s ease, transform 0.8s ease;
+}
+
+.surge-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.surge-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.surge-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 

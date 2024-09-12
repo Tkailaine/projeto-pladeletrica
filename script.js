@@ -81,3 +81,58 @@ container.addEventListener('touchmove', (e) => {
 container.addEventListener('touchend', () => {
     isSwiping = false; // Permite novos deslizes
 });
+
+
+// digitação automatica
+
+const textElement = document.getElementById('text');
+const text = textElement.textContent; // O texto original
+textElement.textContent = ''; // Limpa o texto original
+
+let index = 0;
+
+function type() {
+    if (index < text.length) {
+        textElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100); // Ajuste a velocidade da digitação aqui
+    } else {
+        // Após a digitação completa, limpar e reiniciar imediatamente
+        setTimeout(() => {
+            index = 0; // Resetar o índice
+            textElement.textContent = ''; // Limpar o texto
+            type(); // Começar imediatamente sem pausa
+        }, 500); // Pausa curta antes de recomeçar (ajuste conforme necessário)
+    }
+}
+
+type(); // Chama a função imediatamente
+
+
+
+ //ativação de animações
+ document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os elementos com as classes de animação
+    const elements = document.querySelectorAll('.surge-bottom, .surge-right, .surge-left');
+  
+    // Configura o IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Adiciona a classe 'visible' quando o elemento entra na visualização
+          entry.target.classList.add('visible');
+          // Para observar uma vez e parar, economizando recursos
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1 // Ajusta para que o elemento seja considerado visível quando 10% dele estiver na viewport
+    });
+  
+    // Observa todos os elementos
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+  });
+  
+
