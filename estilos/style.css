@@ -147,8 +147,8 @@ header .logo> a >img{
 }
 
 .bandeira{
-    background-image: url(../imagens/desktop.jpg);
-    background-position: left;
+    background-image: url(../imagens/teste.jpg);
+    background-position: 70%;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -223,9 +223,8 @@ strong{
   align-items: center;
   justify-content: space-between;
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 100%;
-  margin: auto;
 }
 
 /* Container do slideshow em flexbox */
@@ -234,93 +233,31 @@ strong{
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
+  transition: transform 0.5s ease; /* Transição suave */
 }
 
 /* Estilo dos cards */
 .card {
-  flex: 0 0 auto; /* Cards lado a lado */
-  width: calc(100% / 3); /* Três cards no desktop, ajusta conforme o tamanho da tela */
-  height: 400px;
+  flex: 0 0 auto;
+  width: 100%; /* Mostra um card por vez no mobile */
   margin: 10px;
   padding: 20px;
-  color: white;
+  background-color: #f4f4f4;
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
-.card h2{
-  font-size: 1.1em;
-  margin: 70px 0px 50px 0px;
-}
-
-.foto1{
-  background-image: url(../imagens/residencial.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto2{
-  background-image: url(../imagens/predial.jpg);
-  background-position: 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto3{
-  background-image: url(../imagens/industrial.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto4{
-  background-image: url(../imagens/hidraulica.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto5{
-  background-image: url(../imagens/cerca.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto6{
-  background-image: url(../imagens/camera.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.foto7{
-  background-image: url(../imagens/pintura.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-/* Estilo responsivo */
-@media (max-width: 1024px) {
+/* Responsivo */
+@media (min-width: 768px) {
   .card {
-      width: calc(100% / 2); /* Dois cards em telas menores */
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-      width: 100%; /* Um card por vez no mobile */
+      width: calc(100% / 3); /* Três cards por vez no desktop */
   }
 }
 
 /* Botões de navegação */
 button.prev, button.next {
-  background-color: var(--cor3);
+  background-color: rgba(0,0,0,0.5);
   color: white;
   border: none;
   cursor: pointer;
@@ -339,6 +276,10 @@ button.prev {
 button.next {
   right: 10px;
 }
+
+
+
+
 
 .qualidade{
   position: relative;
@@ -428,4 +369,52 @@ button.next {
   width: 30px;
   height: 30px;
  
+}
+.foto1{
+  background-image: url(../imagens/residencial.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto2{
+  background-image: url(../imagens/predial.jpg);
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto3{
+  background-image: url(../imagens/industrial.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto4{
+  background-image: url(../imagens/hidraulica.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto5{
+  background-image: url(../imagens/cerca.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto6{
+  background-image: url(../imagens/camera.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foto7{
+  background-image: url(../imagens/pintura.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
