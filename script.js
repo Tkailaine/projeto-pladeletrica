@@ -136,3 +136,17 @@ type(); // Chama a função imediatamente
   });
   
 
+  //galeria
+  function openLightbox() {
+    document.getElementById("lightbox").style.display = "block";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+
+function changeImage(element) {
+    var expandedImg = document.getElementById("expandedImg");
+    expandedImg.src = element.src;
+}
+

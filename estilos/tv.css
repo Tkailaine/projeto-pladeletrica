@@ -133,6 +133,11 @@ header > nav > .itens{
 
 }
 
+.seguranca{
+
+  padding-bottom: 120px;
+}
+
 .epi{
   transform: translateY(0);
   transition: transform 0.6s ease;
@@ -180,4 +185,32 @@ header > nav > .itens{
     margin-left: 10%;
     
   }
+}
+
+.conteudo-curriculo{
+  justify-content: space-around;
+  align-items: center;
+  }
+
+.sessao-footer{
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    
+  }
+.ft-curriculo{
+  width: 430px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.384);
+}
+
+.txt-curriculo{
+  width: 50%;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.links-uteis > li{
+  font-size: 1.4em;
+  margin: 20px 0px;
 }

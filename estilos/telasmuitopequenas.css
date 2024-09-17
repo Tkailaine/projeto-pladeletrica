@@ -39,7 +39,12 @@
 
   .titulo-personalizado{
     margin-top: 50px;
-   
+   margin-bottom: 15px;
+  }
+
+  .titulo-personalizado h1{
+    
+    font-size: 1.5em;
   }
 
   button.prev {
@@ -70,4 +75,17 @@
 .destaques h1{
 font-size: 1em;
 
+}
+
+.chamada-cliente > h1{
+  font-size: 1.2em;
+ }
+
+ .btn-orcamento2{
+
+  width: 180px;
+  height: 40px;
+  font-size: 1em;
+  top: 60%;
+ 
 }

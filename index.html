@@ -29,21 +29,21 @@
     
             <div class="itens desktop">
                 <div><a href="#inicio" target="_self">Home</a></div>
-                <div><a href="#quem-somos" target="_self">Quem somos</a></div>
+                <div><a href="#quem-somos" target="_self">Sobre</a></div>
                 <div><a href="#servicos" target="_self">Serviços</a></div>
                 <div><a href="#qualidade" target="_self">Pilares</a></div>
                 
-                <div><a href="#galeria-ft" target="_self">Galeria</a></div>
+                <div><a href="#galeria" target="_self">Galeria</a></div>
             </div>
     
             <div class="menu-lateral">
                 <div class="close-btn"> &times;</div>
                 <ul class=" lateral">
                     <li><a href="#inicio" target="_self">Home</a> 
-                    <li><a href="#quem-somos" target="_self">Quem somos</a>
+                    <li><a href="#quem-somos" target="_self">Sobre</a>
                     <li><a href="#servicos" target="_self">Serviços</a>
                     <li><a href="#qualidade" target="_self">Pilares</a>
-                    <li><a href="#galeria-ft" target="_self">Galeria</a>
+                    <li><a href="#galeria" target="_self">Galeria</a>
                 </ul>
             </div>
     
@@ -72,10 +72,10 @@
         <section class="quem-somos" id="quem-somos">
             <div class="conteudo surge-right">
                 <div class="titulo-personalizado">
-                 <h1>Quem somos</h1>
+                 <h1>Sobre</h1>
                 </div>
 
-                <p class="resumo-sobre">A <strong>Plad Elétrica</strong> é uma empresa autônoma especializada em soluções elétricas para ambientes residenciais, prediais e industriais. Com mais de 15 anos de experiência no mercado, oferecemos um serviço diferenciado, com foco na <strong>qualidade</strong> dos materiais utilizados, no <strong>atendimento excelente</strong> e na <strong>segurança</strong> total de nossos clientes e colaboradores. Nossa missão é garantir a eficiência e a segurança das instalações elétricas em cada projeto, seja pequeno ou grande.</p>
+                <p class="resumo-sobre">A <strong>Plad Elétrica</strong> é uma empresa autônoma especializada em soluções elétricas para ambientes residenciais, prediais e industriais. Com mais de 15 anos de experiência no mercado, nosso diferencial está na combinação de <strong>excelência no atendimento</strong>, uso de materiais de <strong>alta qualidade</strong> e um compromisso inabalável com a <strong>segurança</strong> de nossos clientes e colaboradores. Oferecemos soluções completas e personalizadas, garantindo a máxima eficiência e segurança em cada projeto, independentemente de seu porte. Nossa missão é superar expectativas, assegurando a confiabilidade das instalações elétricas em todos os serviços que realizamos.</p>
             </div>
 
             <div class="conteudo" id="servicos">
@@ -164,21 +164,120 @@
                     </div>
             </section>
 
+            <section class="gallery-container" id="galeria">
+                <div class="titulo-personalizado surge-left">
+                    <div class="flash2"></div>
+                    <h1 id="sevicos">Nossos projetos</h1>
+                    <div class="flash2"></div>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item surge-left">
+                        <img src="imagens/ft1.jpeg" alt="Instalação elétrica residencial" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-right">
+                        <img src="imagens/ft2.jpeg" alt="Painel de controle industrial" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-left">
+                        <img src="imagens/ft3.jpg" alt="Projeto elétrico predial" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-right">
+                        <img src="imagens/ft4.jpeg" alt="Manutenção de sistema elétrico" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-left">
+                        <img src="imagens/ft5.jpeg" alt="Fiação elétrica embutida" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-right">
+                        <img src="imagens/ft6.jpeg" alt="Instalação de iluminação industrial" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-left">
+                        <img src="imagens/ft7.jpeg" alt="Painel de distribuição" onclick="openLightbox();changeImage(this)">
+                    </div>
+                    <div class="gallery-item surge-right">
+                        <img src="imagens/ft8.jpeg" alt="Instalação de cabos subterrâneos" onclick="openLightbox();changeImage(this)">
+                    </div>
+                </div>
+            </section>
         
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="expandedImg">
+            </div>
          
-            
+            <section class="chamada-cliente">
+                <h1>Tenha uma solução confiável e eficiente</h1>
+                
+                <div><a href="https://api.whatsapp.com/send?phone=5511962354145&text=Ol%C3%A1,%20Plad%20El%C3%A9trica!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AA!" target="_blank"><button class="btn-orcamento2">Solicitar orçamento</button></a></div>
+            </section>
 
+            <!--SESSÃO CURRÍCULO PEDRO NERY-->
+            <section class="curriculo" id="curriculo-sobre-mim">
+                <div class="conteudo-curriculo">
+                    <div class="ft-curriculo"></div>
+                    <div class="txt-curriculo animate">
+                        <h1>Pedro Nery - Representante técnico da Plad Elétrica</h1>
 
+                        <ul>
+                            <li><strong>Experiência Profissional :</strong>
+                                <br>Mais de 15 anos de atuação em manutenção predial e industrial, com especialização em elétrica e comandos elétricos.</li>
+                        
+                                <li><strong>Áreas de especialização:</strong> <br>Elétrica predial e industrial; <br>Comandos elétricos;
+                                    <br>Instalação e manutenção de CFTV;
+                                    <br>Manutenção hidráulica e predial em geral;
+                                    <br>Manutenção preventiva e corretiva.</li>
+                                
+                                <li><strong>Projetos e Clientes Atendidos:</strong>
+                                    <br>Ampla experiência em condomínios, relações e ambientes comerciais, sempre prezando pela qualidade e segurança dos serviços.</li>
+                                
+                                
+                                <li><strong>Diferenciais:</strong>
 
+                                    <br>Experiência prática em projetos de grande porte, incluindo manutenção predial e elétrica de alta complexidade;
+                                    <br>Forte foco em segurança no trabalho, tanto para colaboradores quanto para clientes;
+                                    <br>Transparência e pontualidade na execução de serviços, promovendo relações de confiança.</li>
+                                
+                                <li><strong>Liderança na Plad Elétrica:</strong>
+                                    <br>Como líder técnico da Plad Elétrica, Pedro garante que cada projeto receba um atendimento personalizado e que as soluções oferecidas superem as expectativas dos clientes.</li>
 
-
-
-        
-
-        
-
+                        </ul>      
+                </div>
+               </section>
+                </section>       
         <script src="script.js"></script>
     </main>
+
+    <footer> 
+        <!--SESSÃO DE INFORMAÇÕES EXTRAS E LINKS DE ACESSO-->
+       <div class="sessao-footer">
+        <div>
+               <div class="contato">
+                <img src="imagens/logo2.png" style="width: 150px;" alt="Logo Dra. Maricy Martinez Advocacia"><h3>Contato</h3>
+                <p>Email: pladeletrica@gmail.com<br> <a style="color: black;" href="https://api.whatsapp.com/send?phone=5511962354145&text=Ol%C3%A1,%20Plad%20El%C3%A9trica!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AA!" target="_blank">Telefone: <br>(11) 96235-4145</a></p>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=5511962354145&text=Ol%C3%A1,%20Plad%20El%C3%A9trica!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20com%20voc%C3%AA!" target="_blank"><input type="button" style="background-color: #f7931e; color: white;
+                    margin-top: 15px;" value="Nos contate" class="btn-contato"></a>
+                </div>
+               </div> 
+        </div>
+
+        <div> 
+            <h3>Links Úteis</h3>
+                <ul class="links-uteis">
+                    <li><a href="#inicio" target="_self">Página Inicial</a></li>
+                    <li><a href="#atuacao" target="_self">Áreas de Atuação</a></li>
+                    <li><a href="#curriculo-sobre-mim" target="_self">Sobre mim</a></li>
+                    <li><a href="#relatos-clientes" target="_self">Relatos</a></li>
+                    <li> <a href="creditos.txt" download="creditos.txt">Baixar Arquivo com Créditos</a></li>
+                </ul>
+        </div>
+       </div>
+
+
+       <span class="divisoria"></span>
+        <div style="text-align: center;">
+            &copy; 2024 Dra. Plad Elétrica. Todos os direitos reservados. Desenvolvido por <a href="https://wa.link/28ukpj" target="_blank" style="color: #ff7300;">Pulse Code</a>.
+        </div>
+    </footer>
     
     
 </body>

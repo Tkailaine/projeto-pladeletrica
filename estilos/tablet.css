@@ -60,3 +60,39 @@
     
   }
 }
+
+.conteudo-curriculo{
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  .ft-curriculo{
+  
+  width: 350px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.384);
+  background-position: 60%;
+  }
+  
+  .txt-curriculo{
+  width: 50%;
+  margin-top: 20px;
+  font-size: 1.2em;
+  
+  }
+
+  .txt-curriculo h1{
+    font-size: 1.2em;
+    }
+  @media (max-width: 862px) {
+
+    .ft-curriculo{
+      width: 250px;
+      
+      background-position: 65%;
+      }
+  }
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }

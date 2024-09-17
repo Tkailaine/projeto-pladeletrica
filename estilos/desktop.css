@@ -43,7 +43,7 @@ html, body{
   }
   
   .btn-orcamento{
-    top: 55%;
+    top: 65%;
   }
 
   .border{
@@ -103,3 +103,41 @@ html, body{
   .manutencao:hover{
     transform: translateY(-20px);
   }
+
+  .conteudo-curriculo{
+    justify-content: space-around;
+    align-items: center;
+
+    }
+    
+    .ft-curriculo{
+    width: 380px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.384);
+    }
+    
+    .txt-curriculo{
+    width: 50%;
+    margin-top: 20px;
+    font-size: 1.2em;
+    }
+
+    .footer{
+      height: 300px;
+    }
+    
+    .sessao-footer{
+    
+      justify-content: start;
+      flex-direction: row;
+      
+    }
+    
+    .links-uteis > li{
+      font-size: 1.3em;
+      margin: 20px 0px;
+    }
+    
+    .sessao-footer > div{
+    margin-top: 25px;
+    margin-right: 60px;
+    }
