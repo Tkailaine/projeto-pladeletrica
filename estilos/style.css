@@ -697,13 +697,13 @@ button.next {
 .btn-orcamento2{
   position: absolute;
   border: none;
-  width: 200px;
+  width: 150px;
   height: 40px;
   border-radius: 8px 0px;
   background-color: var(--cor3);
   color: white;
-  font-weight: 700;
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 0.8em;
   top: 62%;
   left: 50%;
   transform: translate(-50%, 0%);

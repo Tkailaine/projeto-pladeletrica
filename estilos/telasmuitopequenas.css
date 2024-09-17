@@ -78,14 +78,32 @@ font-size: 1em;
 }
 
 .chamada-cliente > h1{
-  font-size: 1.2em;
+  font-size: 1em;
  }
 
- .btn-orcamento2{
-
+ btn-orcamento2{
+  position: absolute;
+  border: none;
   width: 150px;
-  height: 35px;
-  font-size: 1em;
+  height: 40px;
+  border-radius: 8px 0px;
+  background-color: var(--cor3);
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+}
+
+.btn-orcamento2{
+  position: absolute;
+  border: none;
+  width: 120px;
+  height: 30px;
+
   top: 60%;
- 
+  left: 50%;
+
 }
