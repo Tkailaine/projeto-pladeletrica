@@ -690,20 +690,21 @@ button.next {
  left: 50%;
  transform: translate(-50%, -50%);
  text-align: center;
+ font-size: 1.4em;
 }
 
 
 .btn-orcamento2{
   position: absolute;
   border: none;
-  width: 250px;
-  height: 55px;
+  width: 200px;
+  height: 40px;
   border-radius: 8px 0px;
   background-color: var(--cor3);
   color: white;
   font-weight: 700;
-  font-size: 1.2em;
-  top: 65%;
+  font-size: 1em;
+  top: 62%;
   left: 50%;
   transform: translate(-50%, 0%);
   cursor: pointer;
