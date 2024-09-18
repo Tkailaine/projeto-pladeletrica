@@ -214,3 +214,13 @@ header > nav > .itens{
   font-size: 1.4em;
   margin: 20px 0px;
 }
+
+.ocultar{
+  display: none;
+}
+
+@media (max-width: 1109px) {
+  .ocultar{
+    display: block;
+  }
+}
